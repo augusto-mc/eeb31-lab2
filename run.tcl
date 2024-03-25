@@ -40,10 +40,17 @@ vlib work
 # vsim work.test_lab1
 # run 1ms
 
-puts "MYINFO testando sr_latch"
+#puts "MYINFO testando sr_latch"
+#vcom -2008 sr_latch.vhdl
+#vcom -2008 test_sr_latch.vhdl
+#vsim work.test_sr_latch
+#run 1ms
+
+puts "MYINFO testando d_latch"
 vcom -2008 sr_latch.vhdl
-vcom -2008 test_sr_latch.vhdl
-vsim work.test_sr_latch
+vcom -2008 d_latch.vhdl
+vcom -2008 test_d_latch.vhdl
+vsim work.test_d_latch
 run 1ms
 
 exit
