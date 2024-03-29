@@ -61,10 +61,21 @@ vlib work
 #vsim work.test_d_flip_flop
 #run 1ms
 
-puts "MYINFO testando mux"
+#puts "MYINFO testando mux"
+#vcom -2008 mux.vhdl
+#vcom -2008 test_mux.vhdl
+#vsim work.test_mux
+#run 1ms
+
+puts "MYINFO testando shift_register4"
 vcom -2008 mux.vhdl
-vcom -2008 test_mux.vhdl
-vsim work.test_mux
-run 1ms
+vcom -2008 sr_latch.vhdl
+vcom -2008 d_latch.vhdl
+vcom -2008 d_flip_flop.vhdl
+vcom -2008 shift_register.vhdl
+vcom -2008 shift_register4.vhdl
+vcom -2008 test_shift_register4.vhdl
+vsim work.test_shift_register4
+run 1 ms
 
 exit
