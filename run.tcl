@@ -53,13 +53,18 @@ vlib work
 #vsim work.test_d_latch
 #run 1ms
 
-puts "MYINFO testando d_flip_flop"
-vcom -2008 sr_latch.vhdl
-vcom -2008 d_latch.vhdl
-vcom -2008 d_flip_flop.vhdl
-vcom -2008 test_d_flip_flop.vhdl
-vsim work.test_d_flip_flop
-run 1ms
+#puts "MYINFO testando d_flip_flop"
+#vcom -2008 sr_latch.vhdl
+#vcom -2008 d_latch.vhdl
+#vcom -2008 d_flip_flop.vhdl
+#vcom -2008 test_d_flip_flop.vhdl
+#vsim work.test_d_flip_flop
+#run 1ms
 
+puts "MYINFO testando mux"
+vcom -2008 mux.vhdl
+vcom -2008 test_mux.vhdl
+vsim work.test_mux
+run 1ms
 
 exit
